@@ -49,10 +49,10 @@
 
         DEFAULT {
             bindings = <
-&mt ESC Q       &kp W             &kp E         &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt TAB A       &kp S             &kp D         &kp F         &kp G      &none          &kp LG(LANG1)    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z           &kp X             &kp C         &kp V         &kp B      &kp MINUS      &kp LANG2        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 1          &lt 3 BACKSPACE  &lt 2 ENTER                             &none
+&mt ESC Q         &kp W         &kp E         &kp R         &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt TAB A         &kp S         &kp D         &kp F         &kp G      &none          &kp LG(LANG1)    &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V         &kp B      &kp MINUS      &kp LANG2        &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_GUI  &kp SPACE  &mo 1          &lt 3 BACKSPACE  &lt 2 ENTER                             &none
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -71,7 +71,7 @@
             bindings = <
 &kp N1    &kp N2     &kp N3     &kp N4     &kp N5                              &kp KP_PLUS      &kp KP_MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
 &kp PLUS  &kp MINUS  &kp ASTRK  &kp SLASH  &kp EQUAL  &kp UNDER      &kp HOME  &kp KP_ASTERISK  &kp KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&none     &none      &kp F3     &kp F4     &kp F5     &trans         &trans    &kp F6           &kp F7        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&none     &none      &kp F3     &kp F4     &kp F5     &trans         &trans    &kp KP_COMMA     &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
 &trans    &trans     &trans     &trans     &trans     &trans         &trans    &trans                                                           &kp KP_NUMBER_0
             >;
         };
