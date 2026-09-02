@@ -18,12 +18,12 @@
         compatible = "zmk,combos";
 
         shift_tab {
-            bindings = <&kp LANG2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <12 13>;
         };
 
         lang {
-            bindings = <&kp LANG1>;
+            bindings = <&kp LANG2>;
             key-positions = <18 19>;
         };
 
