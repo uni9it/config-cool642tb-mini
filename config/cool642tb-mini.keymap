@@ -34,7 +34,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <9 42>;
+            key-positions = <40 41>;
         };
     };
 
@@ -54,10 +54,10 @@
 
         DEFAULT {
             bindings = <
-&mt ESC Q         &kp W         &kp E         &kp R      &kp T                    &kp Y      &kp U  &kp I      &kp O    &mt BACKSPACE P
-&mt TAB A         &kp S         &kp D         &kp F      &kp G  &none      &none  &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B  &none      &none  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 1  &mo 2      &mo 3  &kp ENTER                             &kp BACKSPACE
+&mt ESC Q         &kp W         &kp E         &kp R  &kp T                            &kp Y          &kp U  &kp I      &kp O    &kp P
+&mt TAB A         &kp S         &kp D         &kp F  &kp G  &none          &none      &kp H          &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B  &none          &none      &kp N          &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1  &mo 2  &kp SPACE      &kp ENTER  &kp BACKSPACE                             &mo 3
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
