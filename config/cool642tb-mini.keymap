@@ -34,7 +34,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <40 41>;
+            key-positions = <8 9>;
         };
     };
 
