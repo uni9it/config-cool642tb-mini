@@ -17,19 +17,25 @@
 };
 
 / {
+    automouse_temp_layer: automouse_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <18 19 20 30 31 32>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
- input-processors = <&zip_temp_layer 4 10000>;
+        input-processors = <&automouse_temp_layer 4 10000>;
 
-scroller {
-    layers = <5>;
-    input-processors =
-    <&zip_xy_to_scroll_mapper>,
-    <&zip_scroll_scaler 1 8>,
-<&zip_scroll_scaler 1 14>;
-};
+        scroller {
+            layers = <5>;
+            input-processors =
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_scaler 1 8>,
+                <&zip_scroll_scaler 1 14>;
+        };
     };
 };
 
