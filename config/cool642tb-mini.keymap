@@ -47,20 +47,6 @@
 
             tap-ms = <20>;
         };
-
-        custom_scroll_scaler: custom_scroll_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-
-    trackball_hd_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball_hd>;
-        input-processors = <&custom_scroll_scaler 2 1>;
     };
 
     keymap {
