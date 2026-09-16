@@ -1,5 +1,6 @@
 #include "cool642tb-mini.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -20,6 +21,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        scroller {
+            layers = <5>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
