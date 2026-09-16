@@ -19,12 +19,12 @@
 
         shift_tab {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
         };
 
         lang {
             bindings = <&kp LANG2>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
         };
 
         aaa {
