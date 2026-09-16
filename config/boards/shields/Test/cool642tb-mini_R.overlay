@@ -52,22 +52,28 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
-    trackball: trackball@0 {
-        status = "okay";
-        compatible = "pixart,pmw3610";
-        reg = <0>;
-        spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+trackball: trackball@0 {
+    status = "okay";
+    compatible = "pixart,pmw3610";
+    reg = <0>;
+    spi-max-frequency = <2000000>;
+    irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
+    cpi = <600>;
+    motion-threshold = <2>;
 
-        inertial-scroll;
-        inertial-scroll-layers = <5>;
-        inertial-scroll-gain-pct = <130>;
-        inertial-scroll-decay-pct = <99>;
-        inertial-scroll-interval-ms = <10>;
-        inertial-scroll-threshold = <4>;
-    };
+    invert-x;
+    invert-y;
+
+    evt-type = <INPUT_EV_REL>;
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+
+    inertial-scroll;
+    inertial-scroll-layers = <5>;
+    inertial-scroll-gain-pct = <130>;
+    inertial-scroll-decay-pct = <99>;
+    inertial-scroll-interval-ms = <10>;
+    inertial-scroll-threshold = <4>;
+};
 };
