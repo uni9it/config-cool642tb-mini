@@ -49,6 +49,13 @@
         };
     };
 
+    /* 慣性スクロールの設定をここに追加しました */
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>; // 設計者様の定義名に合わせています
+        input-processors = <&zip_scroll_inertia>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
