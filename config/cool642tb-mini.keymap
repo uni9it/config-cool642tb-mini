@@ -49,6 +49,12 @@
         };
     };
 
+    trackball_hd_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_hd>;
+        input-processors = <&zip_scroll_scaler 2 1>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
