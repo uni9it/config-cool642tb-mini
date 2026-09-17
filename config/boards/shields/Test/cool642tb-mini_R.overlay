@@ -21,7 +21,7 @@
     automouse_temp_layer: automouse_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <18 19 20 30 31 32>;
+        excluded-positions = <18 19 20 30 31 32 36>;
     };
 
     trackball_listener {
