@@ -90,7 +90,7 @@ trackball: trackball@0 {
     inertial-scroll-layers = <5>;
     inertial-scroll-gain-pct = <130>;
     inertial-scroll-decay-pct = <99>;
-    inertial-scroll-interval-ms = <10>;
+    inertial-scroll-interval-ms = <8>;
     inertial-scroll-threshold = <4>;
 };
 };
