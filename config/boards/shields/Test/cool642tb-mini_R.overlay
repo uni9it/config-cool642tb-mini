@@ -24,6 +24,17 @@
         excluded-positions = <18 19 20 27 30 31 32 36>;
     };
 
+    scroll_inertia: scroll_inertia {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+
+        axis = <1>;
+        layer = <5>;
+
+        scale = <1>;
+        scale-div = <112>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -35,6 +46,7 @@
             input-processors =
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+                <&scroll_inertia>,
                 <&zip_scroll_scaler 1 8>,
                 <&zip_scroll_scaler 1 14>;
         };
@@ -86,11 +98,5 @@ trackball: trackball@0 {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
 
-    inertial-scroll;
-    inertial-scroll-layers = <5>;
-    inertial-scroll-gain-pct = <130>;
-    inertial-scroll-decay-pct = <99>;
-    inertial-scroll-interval-ms = <10>;
-    inertial-scroll-threshold = <4>;
 };
 };
