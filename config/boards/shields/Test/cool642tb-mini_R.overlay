@@ -38,8 +38,10 @@
         move = <55>;
         min-events = <6>;
 
+        decay-fast = <995>;
+        decay-slow = <995>;
         decay-tail = <995>;
-        friction = <15>;
+        friction = <0>;
     };
 
     trackball_listener {
