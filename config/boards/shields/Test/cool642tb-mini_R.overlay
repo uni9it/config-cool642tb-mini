@@ -33,6 +33,10 @@
 
         scale = <1>;
         scale-div = <112>;
+
+        start = <28>;
+        move = <55>;
+        min-events = <6>;
     };
 
     trackball_listener {
