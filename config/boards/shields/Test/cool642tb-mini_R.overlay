@@ -37,6 +37,9 @@
         start = <28>;
         move = <55>;
         min-events = <6>;
+
+        decay-tail = <995>;
+        friction = <15>;
     };
 
     trackball_listener {
