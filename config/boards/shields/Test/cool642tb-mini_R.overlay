@@ -41,7 +41,7 @@
         decay-fast = <995>;
         decay-slow = <995>;
         decay-tail = <995>;
-        friction = <0>;
+        friction = <5>;
     };
 
     trackball_listener {
