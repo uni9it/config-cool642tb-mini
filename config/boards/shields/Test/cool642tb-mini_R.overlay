@@ -32,7 +32,7 @@
         layer = <5>;
 
         scale = <1>;
-        scale-div = <112>;
+        scale-div = <96>;
 
         start = <28>;
         move = <55>;
@@ -52,7 +52,7 @@
                 <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                 <&scroll_inertia>,
                 <&zip_scroll_scaler 1 8>,
-                <&zip_scroll_scaler 1 14>;
+                <&zip_scroll_scaler 1 12>;
         };
     };
 };
