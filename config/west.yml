@@ -8,7 +8,10 @@ manifest:
 
     - name: razilyis
       url-base: https://github.com/razilyis
-
+      
+    - name: mjmjm0101
+      url-base: https://github.com/mjmjm0101
+      
   projects:
     - name: zmk
       remote: na-ka-no
@@ -19,5 +22,9 @@ manifest:
       remote: razilyis
       revision: Dev-v0.3_inertial-scroll
 
+    - name: zmk-input-processor-scroll-inertia
+      remote: mjmjm0101
+      revision: main
+      
   self:
     path: config
