@@ -74,10 +74,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE  &none   &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                      &kp KP_PLUS      &kp KP_MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&kp TAB     &none   &none                 &none                 &none           &none       &trans  &kp KP_ASTERISK  &kp KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&none       &none   &none                 &none                 &none           &trans      &trans  &kp KP_COMMA     &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans      &trans  &trans                &trans                &trans          &trans      &trans  &trans                                                           &kp KP_NUMBER_0
+&kp ESCAPE  &none   &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
+&kp TAB     &none   &none                 &none                 &none           &none       &trans  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&none       &none   &none                 &none                 &none           &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
+&trans      &trans  &trans                &trans                &trans          &trans      &trans  &trans                                                              &kp KP_SLASH
             >;
         };
 
